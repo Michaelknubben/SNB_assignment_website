@@ -1,0 +1,32 @@
+html, body {
+  box-sizing: border-box;
+  background-color: #2B2A2F;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #767474;
+  height: 100%;
+  width: 100%;
+}
+a, a:hover {
+  text-decoration: none;
+  color: #30BF6E;
+}
+
+.felgroen {
+  color: #30BF6E;
+}
+
+span {
+color: black;
+}
+
+/* custom-navbar {
+  background-color: #000000;
+} */
+
+
+/* Modify the background color - https://www.geeksforgeeks.org/bootstrap/how-to-change-navigation-bar-color-in-bootstrap/ */
+.navbar-custom {
+    background-color: #3C3942
+}
