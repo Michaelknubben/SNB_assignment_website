@@ -8,25 +8,54 @@ html, body {
   height: 100%;
   width: 100%;
 }
-a, a:hover {
-  text-decoration: none;
-  color: #30BF6E;
-}
-
 .felgroen {
   color: #30BF6E;
 }
+h1 {
+  font-size: 40px;
+  background-color: #3C3942;
+  color: #626262;
+}
+
+  /* h2 {
+    font-size: 30px;
+  } */
+mark {
+  background-color: #30BF6E;
+  color: black;
+}
+
+a, a:hover {
+  color: #30BF6E;
+  text-decoration: underline;
+  text-decoration-color: #30BF6E ;
+  text-decoration-thickness: 1px;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #30BF6E ;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 0.5em; 
+}
+
+/* .nav-link { */
+  /* text-decoration: underline; */
+  /* text-decoration-color: #30BF6E ; */
+  /* text-decoration-style: solid; */
+  /* text-decoration-thickness: 5px; */
+  /* text-underline-offset: 0.5em;  */
+/* } */
+/* .nav-link active{
+  color: #30BF6E;
+} */
+
 
 span {
 color: black;
 }
 
-/* custom-navbar {
-  background-color: #000000;
-} */
-
-
-/* Modify the background color - https://www.geeksforgeeks.org/bootstrap/how-to-change-navigation-bar-color-in-bootstrap/ */
 .navbar-custom {
-    background-color: #3C3942
+  background-color: #3C3942;
+  height: 100px;
 }
