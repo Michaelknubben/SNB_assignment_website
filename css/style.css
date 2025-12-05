@@ -1,55 +1,59 @@
 html, body {
   box-sizing: border-box;
-  background-color: #2B2A2F;
+  background-color: #232323;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #767474;
+  color: #c0c0c0;
   height: 100%;
   width: 100%;
 }
-.felgroen {
-  color: #30BF6E;
-}
-h1 {
-  font-size: 40px;
-  background-color: #3C3942;
-  color: #626262;
+:root {
+--felgroen: #30BF6E;
 }
 
-  /* h2 {
-    font-size: 30px;
-  } */
+.felgroen {
+  color: var(--felgroen);
+  font-size: 42px;
+}
+
 mark {
-  background-color: #30BF6E;
+  background-color: var(--felgroen);
   color: black;
 }
 
 a, a:hover {
-  color: #30BF6E;
+  color: var(--felgroen);
   text-decoration: underline;
-  text-decoration-color: #30BF6E ;
+  text-decoration-color: var(--felgroen) ;
   text-decoration-thickness: 1px;
 }
+
 .nav-link:hover {
+  /* font-size: 30px; */
+  color: #30BF6E;
   text-decoration: underline;
-  text-decoration-color: #30BF6E ;
+  text-decoration-color: var(--felgroen) ;
   text-decoration-style: solid;
   text-decoration-thickness: 5px;
   text-underline-offset: 0.5em; 
 }
 
-/* .nav-link { */
+.nav-link {
+  font-size: 25px;
+  color: #e8e8e8;
   /* text-decoration: underline; */
-  /* text-decoration-color: #30BF6E ; */
-  /* text-decoration-style: solid; */
-  /* text-decoration-thickness: 5px; */
-  /* text-underline-offset: 0.5em;  */
-/* } */
-/* .nav-link active{
-  color: #30BF6E;
-} */
+}
 
+.nav-link.active {
+  font-size: 25px;
+  color: var(--felgroen) !important;
+  text-decoration: underline;
+  text-decoration-color: var(--felgroen) ;
+  text-decoration-style: solid;
+  text-decoration-thickness: 42px;
+  text-underline-offset: 0.5em; 
+}
 
 span {
 color: black;
@@ -59,3 +63,25 @@ color: black;
   background-color: #3C3942;
   height: 100px;
 }
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {.nav-link.active {
+  text-decoration-thickness: 5px;
+}}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {.nav-link.active {
+  text-decoration-thickness: 42px;
+}}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
