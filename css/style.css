@@ -68,7 +68,7 @@ color: black;
 No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {.nav-link.active {
+@media (min-width: 1px) {.nav-link.active {
   text-decoration-thickness: 5px;
 }}
 
@@ -76,12 +76,3 @@ No media query for `xs` since this is the default in Bootstrap */
 @media (min-width: 768px) {.nav-link.active {
   text-decoration-thickness: 42px;
 }}
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {}
-
-/* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
-
-/* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {}
